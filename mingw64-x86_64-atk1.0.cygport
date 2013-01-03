@@ -1,5 +1,9 @@
+CROSS_HOST="x86_64-w64-mingw32"
+ORIG_PN="atk"
+inherit cross gnome2
+
 NAME="mingw64-x86_64-atk1.0"
-VERSION=2.4.0
+VERSION=2.6.0
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GNOME Accessibility Toolkit library for Win64 toolchain"
@@ -8,9 +12,6 @@ contains msvcrt-linked binaries (aka 'mingw').  It is for use with the
 mingw64-x86_64-gcc cross compiler, and installs into the
 /usr/x86_64-w64-mingw32/sys-root/mingw/{lib,include} directories."
 HOMEPAGE="http://www.gtk.org/"
-CROSS_HOST="x86_64-w64-mingw32"
-ORIG_PN="atk"
-inherit cross gnome2
 
 src_install() {
 	cd ${B}
@@ -18,4 +19,3 @@ src_install() {
 	cyginstall -j1
 }
 
-KEEP_LA_FILES="none"
