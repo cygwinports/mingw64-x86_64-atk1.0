@@ -3,7 +3,7 @@ ORIG_PN="atk"
 inherit cross gnome2
 
 NAME="mingw64-x86_64-atk1.0"
-VERSION=2.18.0
+VERSION=2.22.0
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GNOME Accessibility Toolkit library for Win64 toolchain"
